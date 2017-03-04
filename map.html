@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- above lines taken from https://getbootstrap.com/getting-started/ -->
+
+<title>A page for playing</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>A map in a responsive page</h1>
+        <p>See how the map below, which is sized at 100% width and 500px height, resizes on mobile because it is placed within a div container on Bootstrap.</p>
+        <p>
+        <iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1LadH80-kgIQN6cBeDNIrH_Uzr6niHwAwaWCCauJY&amp;viz=MAP&amp;h=false&amp;lat=52.52861432435522&amp;lng=-1.9092286500000455&amp;t=1&amp;z=12&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>The map</h2>
+          <p>This map is placed within a class="col-md-6" div so it takes up half the page on desktop.</p>
+          <p> <iframe width='100%' height='520' frameborder='0' src='https://paulbradshaw.carto.com/viz/432be176-efac-11e6-bb27-0ef24382571b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></p>
+
+        </div>
+        <div class="col-md-6">
+          <h2>A column of text</h2>
+          <p>Next to the map you can place some explanatory text.</p>
+          <p>Taken <a href="http://chimeproject.eu/chime-birmingham-centre-for-media-and-culture-research-bcmcr-hack-day/">from this post</a>: Perhaps the most ambitions of the hack products, and taking also the Cheltenham data as it’s starting point, this idea sought to render the data collected from pilot participants into 3D virtual space.
+          </p>
+          <p>Users would be able to explore Cheltenham at street level across a condensed timeframe and encounter reflections (including text and images) at the very locations where they were originally posted. The team also described how further development could enable users to (re)experience an entire festival by ‘visiting’ stages and hearing recordings from artists pulled in via the APIs of music streaming services.
+
+ </p>
+
+       </div>
+
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; This is a p tag contained within footer tags, which places it accordingly</p>
+      </footer>
+    </div> <!-- /container -->
+
+  <!-- grab jQuery before we grab Bootstrap because it needs it first -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <script>console.log('Play time');
+    console.log(document.body); //show the HTML of this page's body tags
+  </script>
+</body>
+</html>

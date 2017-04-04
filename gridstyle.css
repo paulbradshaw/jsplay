@@ -1,0 +1,44 @@
+body {
+background-color: yellow;
+margin: o;
+}
+
+header {
+  background-color: white;
+  margin-top: 0;
+  padding: 1em;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr; /* each column is 1 fraction */
+  grid-template-rows: 1fr min-content; /* work back: 1 row is the minimum content in; the other is the fraction left */
+}
+
+article {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+
+aside {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+footer {
+  display: grid;
+  grid-row: 1;
+  grid-column: 3;
+  grid-template-columns: 1fr, 1fr, 1fr; /* each column is 1 fraction */
+}
+
+footer div.footer-content1 {
+  grid-row:1;
+  grid-column: 1;
+}
+
+h1 {
+  margin:0;
+}

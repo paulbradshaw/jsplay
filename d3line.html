@@ -24,7 +24,7 @@ var margin = {top: 30, right: 20, bottom: 30, left: 50},
 width = 600 - margin.left - margin.right,
 height = 270 - margin.top - margin.bottom;
 // Parse the date / time
-var parseDate = d3.time.format("%d-%b-%y").parse;
+var parseDate = d3.time.format("%Y").parse; // The %Y indicates a full year in the data. Other formats like "%d-%b-%y" can be used for other ways of indicating dates
 // Set the ranges
 var x = d3.time.scale().range([0, width]);
 var y = d3.scale.linear().range([height, 0]);

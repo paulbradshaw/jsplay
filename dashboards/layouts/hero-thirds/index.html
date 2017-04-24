@@ -5,6 +5,27 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <link rel="stylesheet" type="text/css" href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/keen-dashboards.css" />
+
+  <script type="text/javascript">;
+    !function(name,path,ctx){
+      var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
+    }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.1.3.min.js',this);
+
+    KeenAsync.ready(function(){
+      // Configure a client instance
+      // This is your actual Project ID and Write Key
+      var client = new KeenAsync({
+        projectId: '58fdfc3ebe8c3e260bcadb4e',
+        writeKey: 'E7AAC453A63932CD6687AAEA3A61AC367701F75D8D007D2E57311FAECD759DD56551B46B96E5FDF1B175798070D96DC8707F088089383F52615A5BDEED2D403E771E34A825AA58486BE757F8C6515441707C37654776276F784CFAD32DC19A17'
+      });
+
+      // Record an event
+      client.recordEvent('pageviews', {
+        title: document.title
+      });
+    });
+  </script>
+  
 </head>
 <body class="application">
 

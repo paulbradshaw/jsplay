@@ -11,7 +11,7 @@ First, let's outline some basic jargon which will come in useful:
 
 ## Using the Console
 
-A simple way to test out JavaScript is to write it directly in the Developer Console in Firefox or Chrome. A quick way to open this is by right-clicking on a webpage and selecting *Inspect* or *Inspect element*, then switching to the *Console* view tab in the window that appears.
+A simple way to test out JavaScript is to write it directly in [the Developer Console in Firefox or Chrome](http://blog.teamtreehouse.com/mastering-developer-tools-console). A quick way to open this is by right-clicking on a webpage and selecting *Inspect* or *Inspect element*, then switching to the *Console* view tab in the window that appears.
 
 In any JavaScript you can print useful information in the console too by using the `console.log()` function: whatever is in the parentheses (normally the name of a variable) is shown in the console when you view the webpage you have written with that JavaScript.
 

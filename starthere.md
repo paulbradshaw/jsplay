@@ -84,9 +84,9 @@ function doubleNumber(numtodouble){
   console.log(numtodouble * 2);
   return numtodouble * 2;
   }
-```
 
-`var storingNumber = doubleNumber(2);`
+var storingNumber = doubleNumber(2);
+```
 
 Here the function `doubleNumber` *returns* the result of something being doubled. This is stored in the variable `storingNumber` which called the function.
 

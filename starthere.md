@@ -65,9 +65,11 @@ Variable names in JavaScript cannot begin with a number.
 
 Functions are created with `function`, followed by the name of the function, parentheses (which name any variables it needs to use), and a *block* with the code that it executes when called. For example:
 
-`function doubleNumber(numtodouble){
+```js
+function doubleNumber(numtodouble){
   console.log(numtodouble * 2);
-  }`
+  }
+```
 
 Function names in JavaScript cannot begin with a number.
 
@@ -77,10 +79,12 @@ This function is now ready to be used. A function is called by its name, with in
 
 In the example above, the function just triggers an event. Sometimes, however, you need to store the result of a function. In this case the function needs to `return` a value to whatever called it. For example:
 
-`function doubleNumber(numtodouble){
+```js
+function doubleNumber(numtodouble){
   console.log(numtodouble * 2);
   return numtodouble * 2;
-  }`
+  }
+```
 
 `var storingNumber = doubleNumber(2);`
 
@@ -90,17 +94,19 @@ Here the function `doubleNumber` *returns* the result of something being doubled
 
 The functions above are named, but you can also create *anonymous* functions. These typically look like this:
 
-`function() {
+```js
+function() {
   // what happens goes here
-  }`
+  }
+```
 
 Often these are executed at the same time - an IIFE or [Immediately-Invoked Function Expression](http://www.benalman.com/news/2010/11/immediately-invoked-function-expression/). This is done by wrapping the whole thing in parentheses, and adding parentheses after like so:
 
-`(function() {
+```js
+(function() {
   // what happens goes here
-  })()`
-
-
+  })()
+```
 
 ### Scoped variables
 
@@ -121,18 +127,22 @@ A for loop allows you to repeat an action *for* each item or number in a list. T
 
 Here's an example which counts from 1 to 10, loops for each count, and prints the number:
 
-`for (var i = 1; i <= 10; i = i+1) {
+```js
+for (var i = 1; i <= 10; i = i+1) {
   console.log(i);
-  }`
+  }
+```
 
 Here's another way of presenting the same code:
 
-  `for (var i = 1; // set var i at 1
+```js
+  for (var i = 1; // set var i at 1
     i <= 10; // continue this loop while i is less than or equal to 10
     i = i+1) // change i to i+1 each time the loop runs
     {
     console.log(i); // send value of i to print in console
-    }`
+    }
+```
 
 ## If/else tests (and switch)
 
@@ -150,7 +160,8 @@ If there are more than two things to test, you can also add `else if`
 
 A full example would look like this:
 
-`if (a > 5) {
+```js
+if (a > 5) {
   return "a is greater than 5";
   }
   else if (a < 5){
@@ -158,16 +169,19 @@ A full example would look like this:
     }
     else {
       return "a is 5";
-      }`
+      }
+```
 
 An alternative is `switch`. This takes one argument and then tests it against a series of `case`s like so:
 
-`switch(myvar){
+```js
+switch(myvar){
   case 10:
   return "it is 10";
   case 20:
   return "it is 20";
-  }`
+  }
+```
 
 And a third way to write such a statement is to use the `?` operator - called the *conditional* or *ternary* operator, which is written in the following format:
 

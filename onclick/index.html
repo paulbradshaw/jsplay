@@ -5,12 +5,12 @@
 <body>
   <script>
   function giveAnswer() {
-                 document.getElementById('changeme').textContent = "Six all-female acts have headlined the main stage. They are Adele, Beyonce, Florence and the Machine, Shakespear's Sister, Suzanne Vega and Sinead O'Connor."
+                 document.getElementById('changeme').innerHTML = "<em>Six all-female acts have headlined the main stage. They are Adele, Beyonce, Florence and the Machine, Shakespear's Sister, Suzanne Vega and Sinead O'Connor.</em>"
   }
   </script>
   <h1>Glastonbury quiz: Test your knowledge</h1>
   <h3>Question 1:</h3>
-  <p>How many all-female acts have headlined Glastonbury's main stage in its history?p>
+  <p>How many all-female acts have headlined Glastonbury's main stage in its history?<p>
   <p id="changeme"></p>
   <form>
      <input type="button" onclick="giveAnswer()" value="Reveal the answer" />

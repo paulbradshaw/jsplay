@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=9' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, minimum-scale=1, maximum-scale=1' name='viewport'>
+    <link href='css/application.css' media='screen' rel='stylesheet' type='text/css'>
+    <!-- %link(rel="shortcut icon" type="image/png" href="images/favicon.png")/ -->
+    <!-- %meta(property="fb:admins" content="442397229151844")/ -->
+    <title>De 1950 à 2010: 60 ans de prénoms en France</title>
+    <meta content='De 1950 à 2010 : 60 ans de prénoms en France' property='og:title'>
+    <meta content='article' property='og:type'>
+    <meta content='http://dataaddict.fr/wp-content/uploads/2013/06/prenom_img_home.png' property='og:image'>
+    <meta content='http://dataaddict.fr/prenoms/' property='og:url'>
+    <meta content='Quels sont les prénoms les plus donnés en France ? Le vôtre est-il original ? Combien d’homonymes sont nés la même année que vous ? Y a t’il un retour des Alphonse, Martine, Eugène, Brigitte et Marcel en 2010 ?' property='og:description'>
+    <meta content='fr_FR' property='og:locale'>
+    <meta content='Data Addict' property='og:site_name'>
+    <meta content='width=960, initial-scale=1.0' name='viewport'>
+
+    <script data-main='js/main' src='js/lib/require.js'></script>
+    <script>
+      // google analytics
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35625031-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      // piwik
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.dataaddict.fr//";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript>
+      <p>
+        <img alt='' src='http://piwik.dataaddict.fr/piwik.php?idsite=1' style='border:0'>
+      </p>
+    </noscript>
+  </head>
+  <body>
+    <div id='fb-root'></div>
+    <div id='title'>
+      <h2>De 1950 à 2010 :</h2>
+      <h1>60 ans de prénoms en France</h1>
+    </div>
+    <div id='content'>
+      <div id='left_side'>
+        <form id='search'>
+          <input src='images/search.png' type='image'>
+          <input autocomplete='off' type='text'>
+          <a class='clear' href='#' style='display: none'>
+            <img src='images/clear.png'>
+          </a>
+        </form>
+        <div id='prenoms_list_container'>
+          <div class='loading'>
+            <img alt='spinner' src='images/spinner.gif'>
+            <br>
+            <br>
+            chargement de la liste des prénoms...
+          </div>
+          <ul></ul>
+        </div>
+      </div>
+      <div id='right_side'>
+        <svg>
+          <defs>
+            <clipPath id='graphs_clip_path'>
+              <rect></rect>
+            </clipPath>
+          </defs>
+          <rect id='playground_bg'></rect>
+          <g class='axis' id='x_axis'></g>
+          <g class='axis' id='y_axis'></g>
+          <g id='prenoms'>
+            <g id='lines'></g>
+            <g id='circles'></g>
+            <g id='labels'></g>
+          </g>
+          <g id='popup'></g>
+          <g id='year_zoomers'></g>
+        </svg>
+        <div id='bottom'>
+          <div class='share_link'>
+            Partagez ces résultats avec ce lien :
+            <br>
+            <input id='share_result' type='text'>
+          </div>
+          <div class='links'>
+            <div class='social'>
+              <div class='fb-like' data-href='http://dataaddict.fr/prenoms/' data-layout='button_count' data-show-faces='true' data-width='450'></div>
+              <a class='twitter-share-button' data-hashtags='60ansdeprénoms' data-lang='fr' data-via='_Data_Addict_' href='https://twitter.com/share'></a>
+            </div>
+            <a class='logo' href='http://dataaddict.fr' target='_blank'>
+              <img src='http://dataaddict.fr/prenoms/images/logos/dataaddict_over.png'>
+            </a>
+          </div>
+          <div class='spacer'></div>
+          <div class='explanations'>
+            Les prénoms sélectionnés sont les plus courants en France, ils ont été donnés au moins 2000 fois entre 1950 et 2010.
+            Source : Insee - Fichier des prénoms (Édition 2011)
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
